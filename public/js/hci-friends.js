@@ -44,3 +44,12 @@ function anagrammedName(name) {
 		return name;
 	}
 }
+
+$("a.target").click(projectClick);
+
+function projectClick(e) {
+  e.preventDefault();    
+	var cur = $(this).text();
+	console.log(cur);
+}
+
