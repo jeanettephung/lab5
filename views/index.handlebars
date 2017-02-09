@@ -19,9 +19,7 @@
 		{{#each friends}}
 			<div class="friend row">
 				<img src="{{imageURL}}" class="col-xs-12 img-responsive img-rounded">
-				<a href="#" class="target">
-					<h3 class="col-xs-12">{{name}}</h3>
-				</a>
+				<h3 class="col-xs-12 target" onClick="projectClick(this)">{{name}}</h3>
 				<p class="col-xs-12">{{description}}</p>
 			</div>
 			<hr class=col-xs-12>

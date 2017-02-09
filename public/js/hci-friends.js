@@ -45,11 +45,8 @@ function anagrammedName(name) {
 	}
 }
 
-$("a.target").click(projectClick);
-
-function projectClick(e) {
-  e.preventDefault();    
-	var cur = $(this).text();
-	console.log(cur);
+function projectClick(arg) {
+	var cur = $(arg).text();
+	var name = anagrammedName(cur);
+	$(arg).text(name);
 }
-
